@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<title>公告</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body class="bk_gray">
+		<div class="wrap">
+			<ul class="tournament_gonggao">
+				<li data-url="http://www.baidu.com">
+					<div class="col-xs-2 ">&nbsp;</div>
+					<div class="col-xs-10">
+						<h2>中国高尔夫业余公开赛北方选决赛总拔赛</h2>
+						<time>07月15日</time>
+					</div>
+				</li>
+				<li>
+					<div class="col-xs-2">&nbsp;</div>
+					<div class="col-xs-10">
+						<h2>中国高尔夫业余公开赛北方选拔赛</h2>
+						<time>07月15日</time>
+					</div>
+				</li>
+				<li>
+					<div class="col-xs-2">&nbsp;</div>
+					<div class="col-xs-10">
+						<h2>中国高尔夫业余公开赛北方选拔赛</h2>
+						<time>07月15日</time>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/zepto.min.js" ></script>
+   <script type="text/javascript">
+   	  $('.tournament_gonggao li').on('tap',function(){
+   	  	   window.location.href=$(this).attr('data-url')
+   	  })
+   </script>
+
+</html>

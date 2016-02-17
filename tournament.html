@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="tournament_head row clearfix">
+				<div class="imgbox col-xs-4">
+					<img src="images/img1.jpg" class="">
+				</div>
+				<div class="col-xs-8 pr">
+					<h1>中国高尔夫球业余公开赛总决赛业余公开赛总决赛总决</h1>
+					<div class="selectbtnbox" id="selectbtn">
+						第一轮
+					</div>
+					<ul id="selectul" class="select_lc_ul hidden">
+						<li>第一轮</li>
+						<li>第二轮</li>
+						<li>第三轮</li>
+					</ul>
+				</div>
+				<div class="blank05"></div>
+				<p class="ts clear">
+					当前所在时区:西五区 ,您比当低时间快13小时
+					<br /><span>所有开球时间均为当地时间</span>
+				</p>
+			</div>
+			<div class="blank05"></div>
+			<div>
+				<table border="0" cellspacing="0" cellpadding="0" class="tournament_lc_nav">
+					<tr>
+						<th width="20%">出发TEE#</th>
+						<th width="25%">时间</th>
+						<th width="55%">球员</th>
+					</tr>
+				</table>
+				<table border="0" cellspacing="0" cellpadding="0" width="100%" class="table_lc_content">
+					<tr>
+						<td width="20%">1</td>
+						<td width="25%">8：40</td>
+						<td width="55%">
+							<ul>
+								<li>
+									<div class="col-xs-3"><img src="images/img2.jpg" class="img-responsive"></div>
+									<div class="col-xs-9">李清芳1</div>
+								</li>
+								<li>
+									<div class="col-xs-3"><img src="images/img2.jpg" class="img-responsive"></div>
+									<div class="col-xs-9">李清芳1</div>
+								</li>
+								<li>
+									<div class="col-xs-3"><img src="images/img2.jpg" class="img-responsive"></div>
+									<div class="col-xs-9">李清芳1</div>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td width="20%">1</td>
+						<td width="25%">8：40</td>
+						<td width="55%">Data</td>
+					</tr>
+				</table>
+				<table border="0" cellspacing="0" cellpadding="0" width="100%" class="table_lc_content hidden">
+					<tr>
+						<td width="20%">1</td>
+						<td width="25%">8：40</td>
+						<td width="55%">
+							<ul>
+								<li>
+									<div class="col-xs-3"><img src="images/img2.jpg" class="img-responsive"></div>
+									<div class="col-xs-9">李清芳2</div>
+								</li>
+								<li>
+									<div class="col-xs-3"><img src="images/img2.jpg" class="img-responsive"></div>
+									<div class="col-xs-9">李清芳2</div>
+								</li>
+								<li>
+									<div class="col-xs-3"><img src="images/img2.jpg" class="img-responsive"></div>
+									<div class="col-xs-9">李清芳2</div>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td width="20%">1</td>
+						<td width="25%">8：40</td>
+						<td width="55%">Data</td>
+					</tr>
+				</table>
+				<table border="0" cellspacing="0" cellpadding="0" width="100%" class="table_lc_content hidden">
+					<tr>
+						<td width="20%">1</td>
+						<td width="25%">8：40</td>
+						<td width="55%">
+							<ul>
+								<li>
+									<div class="col-xs-3"><img src="images/img2.jpg" class="img-responsive"></div>
+									<div class="col-xs-9">李清芳3</div>
+								</li>
+								<li>
+									<div class="col-xs-3"><img src="images/img2.jpg" class="img-responsive"></div>
+									<div class="col-xs-9">李清芳3</div>
+								</li>
+								<li>
+									<div class="col-xs-3"><img src="images/img2.jpg" class="img-responsive"></div>
+									<div class="col-xs-9">李清芳3</div>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td width="20%">1</td>
+						<td width="25%">8：40</td>
+						<td width="55%">Data</td>
+					</tr>
+				</table>
+
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript">
+		var selectul = $('#selectul'),
+			selectbtn = $('#selectbtn'),
+			selectcontent = $('.table_lc_content');
+		selectbtn.on('tap', function() {
+			selectul.toggle()
+		}) 
+		selectul.children('li').on('tap', function() {
+			selectul.hide()
+			selectbtn.text($(this).text())
+			selectcontent.eq($(this).index()).show().siblings('.table_lc_content').hide()
+		})
+	</script>
+
+</html>
