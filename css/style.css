@@ -114,3 +114,9 @@ h1,h2,h3,h4,h5,h6{ font-weight: normal; }
 .tournament_gz_table tr td:last-of-type{ border-right: none;}
 .tournament_gz_table tr:nth-child(even) td { background: #FFFFFF;}
 .tournament_gz_table tr:last-of-type td{ border-bottom: #CCCCCC solid 1px;}
+
+.content_header{ margin: 1.5rem auto;}
+.content_header h1{font-size: 1.2rem;  line-height: 1.8rem; font-weight: normal; color: #000000;}
+.content_nr { font-size: 1.0rem; line-height: 1.6rem; padding: 0.5rem 5%;}
+.content_nr  p { margin: 1rem auto;text-indent: 2rem; color: #3e3e3e;}
+.content_nr img{ display: block; max-width: 100%;height: auto; margin: auto;}
