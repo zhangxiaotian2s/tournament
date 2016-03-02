@@ -96,7 +96,8 @@ h1,h2,h3,h4,h5,h6{ font-weight: normal; }
 .table_lc_content tr:last-of-type td{ border-bottom:#CCCCCC solid 1px;}
 .table_lc_content tr:nth-child(even) td{ background: #f6f6f6;}
 .table_lc_content tr td ul li{ width: 90%; margin: auto; clear: both; padding: 0.5rem 0rem; text-align: left; line-height: 2rem; text-indent: 0.5rem; }
-
+.nr_talbe tr td{ border: none!important; text-align: left; background: #FFFFFF!important;}
+.nr_talbe { border: none; width: 100%;}
 
 .tournament_gonggao li{ width: 90%; margin:1rem auto; border: #CCCCCC solid 1px; border-radius:3px;  background: #FFFFFF; overflow: hidden; padding: 0.5rem;}
 .tournament_gonggao li h2{ font-size: 1.15rem; color: #000000; height: 2.6rem; line-height: 1.3rem;}
@@ -120,3 +121,6 @@ h1,h2,h3,h4,h5,h6{ font-weight: normal; }
 .content_nr { font-size: 1.0rem; line-height: 1.6rem; padding: 0.5rem 5%;}
 .content_nr  p { margin: 1rem auto;text-indent: 2rem; color: #3e3e3e;}
 .content_nr img{ display: block; max-width: 100%;height: auto; margin: auto;}
+
+
+
